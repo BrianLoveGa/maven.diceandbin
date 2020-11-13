@@ -7,8 +7,9 @@ public class Bin {
     Bin(Integer faceValueToTrack, Integer numberOfOccurrences) {
     }
 
+    int x = 7;
     public Integer getFaceValueToTrack() {
-        return null;
+        return x;
     }
 
     public Integer getNumberOfOccurrences() {
