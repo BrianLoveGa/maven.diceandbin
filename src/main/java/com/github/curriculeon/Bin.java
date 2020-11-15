@@ -1,21 +1,29 @@
 package com.github.curriculeon;
 
 public class Bin {
+
+    private Integer faceValueToTrack;
+    private Integer numberOfOccurrences;
+
     public Bin(Integer faceValueToTrack) {
+        this(faceValueToTrack, 0);
     }
 
     Bin(Integer faceValueToTrack, Integer numberOfOccurrences) {
+        this.faceValueToTrack = faceValueToTrack;
+        this.numberOfOccurrences = numberOfOccurrences;
     }
 
-    int x = 7;
+
     public Integer getFaceValueToTrack() {
-        return x;
+        return faceValueToTrack;
     }
 
     public Integer getNumberOfOccurrences() {
-        return null;
+        return numberOfOccurrences;
     }
 
     public void increment() {
+        numberOfOccurrences++;
     }
 }
