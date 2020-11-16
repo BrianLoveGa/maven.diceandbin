@@ -61,7 +61,7 @@ public class ConstructorTest {
     public void test4() {
         // given
         Integer numberOfDie = Integer.MAX_VALUE;
-        Integer numberOfTosses = 214748;
+        Integer numberOfTosses = Integer.MAX_VALUE;
 
         // when
         Simulation simulation = new Simulation(numberOfDie, numberOfTosses);
