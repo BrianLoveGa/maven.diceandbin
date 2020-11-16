@@ -2,7 +2,7 @@ package com.github.curriculeon;
 
 public class Bin {
 
-    private Integer faceValueToTrack;
+    private final Integer faceValueToTrack;
     private Integer numberOfOccurrences;
 
     public Bin(Integer faceValueToTrack) {
