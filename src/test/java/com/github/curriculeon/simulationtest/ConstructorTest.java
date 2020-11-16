@@ -60,8 +60,8 @@ public class ConstructorTest {
     @Test
     public void test4() {
         // given
-        Integer numberOfDie = 9999999;
-        Integer numberOfTosses = 99999999;
+        Integer numberOfDie = 214748;
+        Integer numberOfTosses = 214748;
 
         // when
         Simulation simulation = new Simulation(numberOfDie, numberOfTosses);
