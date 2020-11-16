@@ -60,7 +60,7 @@ public class ConstructorTest {
     @Test
     public void test4() {
         // given
-        Integer numberOfDie = 214748;
+        Integer numberOfDie = Integer.MAX_VALUE;
         Integer numberOfTosses = 214748;
 
         // when
