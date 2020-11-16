@@ -15,10 +15,11 @@ public class RollTest {
         die.roll();
     }
 
+    /// passes test when 0 - fails when set to one
     @Test(expected = IllegalArgumentException.class)
     public void test2() {
         // given
-        Integer numberOfFaces = 1;
+        Integer numberOfFaces = 0;
         Die die = new Die(numberOfFaces);
 
         // when

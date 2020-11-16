@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ConstructorTest {
-    @Test
+    @Test(expected = NullPointerException.class)
     public void test0() {
         // given
         Integer numberOfDie = null;
@@ -60,8 +60,8 @@ public class ConstructorTest {
     @Test
     public void test4() {
         // given
-        Integer numberOfDie = Integer.MAX_VALUE;
-        Integer numberOfTosses = Integer.MAX_VALUE;
+        Integer numberOfDie = 9999999;
+        Integer numberOfTosses = 99999999;
 
         // when
         Simulation simulation = new Simulation(numberOfDie, numberOfTosses);
