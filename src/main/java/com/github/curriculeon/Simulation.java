@@ -5,17 +5,18 @@ import java.util.Formatter;
 public class Simulation {
 
 
-    private Integer numberOfDie;
+    private final Dice dice;
     private Integer numberOfTosses;
     private Bins bins;
 
     public Simulation(Integer numberOfDie, Integer numberOfTosses) {
-        this.numberOfDie = numberOfDie;
+        this.dice = new Dice(numberOfDie);
         this.numberOfTosses = numberOfTosses;
+        this.bins = new Bins(dice.getRollMin(), dice.getRollMax());
     }
 
     public void run() {
-        Dice dice = new Dice(numberOfDie);
+        //Dice dice = new Dice();
         bins = new Bins (dice.getRollMin(), dice.getRollMax());
         for (int i=0; i < numberOfTosses; i++){
             Integer faceValue = dice.rollAndSum();

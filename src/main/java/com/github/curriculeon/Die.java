@@ -4,7 +4,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Die {
 
-    private Integer numberOfFaces;
+    private final Integer numberOfFaces;
     private Integer currentFaceValue;
 
 
@@ -18,7 +18,7 @@ public class Die {
 
     public void roll() {
         ThreadLocalRandom randNumbGen = ThreadLocalRandom.current();
-        this.currentFaceValue = randNumbGen.nextInt(1,numberOfFaces);
+        this.currentFaceValue = randNumbGen.nextInt(1,numberOfFaces+1);
     }
 
     public Integer getCurrentFaceValue() {

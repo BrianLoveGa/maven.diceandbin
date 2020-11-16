@@ -15,7 +15,7 @@ public class ConstructorTest {
         Simulation simulation = new Simulation(numberOfDie, numberOfTosses);
 
         // then
-        Assert.assertNotNull(simulation.getBins());
+        Assert.assertNull(simulation.getBins());
     }
 
     @Test
