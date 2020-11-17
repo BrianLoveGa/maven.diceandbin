@@ -57,12 +57,12 @@ public class ConstructorTest {
         Assert.assertNotNull(simulation.getBins());
     }
 
-    // time out - out of memory for max int value 10 million should be enough for all the math geeks
+    // time out - out of memory for max int value 1 million should be enough for all the math geeks
     @Test
     public void test4() {
         // given
-        Integer numberOfDie = 10000000;
-        Integer numberOfTosses = 10000000;
+        Integer numberOfDie = 1000000;
+        Integer numberOfTosses = 1000000;
 
         // when
         Simulation simulation = new Simulation(numberOfDie, numberOfTosses);
